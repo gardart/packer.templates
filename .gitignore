@@ -1,0 +1,6 @@
+packer_cache
+*.box
+output-*
+config.json
+custom.sh
+iso
