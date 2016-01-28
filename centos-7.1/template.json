@@ -132,7 +132,7 @@
     "iso_url": "http://www.fedora.is/CentOS/7/isos/x86_64/CentOS-7-x86_64-Minimal-1503-01.iso",
     "ssh_password": "vagrant",
     "ssh_username": "vagrant",
-    "update": "false"
+    "update": "true"
   }
 
 }
