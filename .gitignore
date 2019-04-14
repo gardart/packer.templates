@@ -4,3 +4,4 @@ output-*
 config.json
 custom.sh
 iso
+.DS_Store

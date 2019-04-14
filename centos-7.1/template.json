@@ -55,6 +55,9 @@
       "remote_datastore": "{{user `esxi_datastore`}}",
       "remote_username": "{{user `esxi_username`}}",
       "remote_password": "{{user `esxi_password`}}",
+      "keep_registered": true,
+      "vnc_disable_password": true,
+      "skip_export": true,
       "shutdown_command": "echo '/sbin/halt -h -p' > /tmp/shutdown.sh; echo 'vagrant'|sudo -S sh '/tmp/shutdown.sh'",
       "tools_upload_flavor": "linux",
       "vm_name": "{{user `hostname`}}",
@@ -86,6 +89,7 @@
         "e_domain={{user `domain`}}"
           ],
       "execute_command": "echo 'vagrant' | {{ .Vars }} sudo -E -S sh '{{ .Path }}'",
+      "expect_disconnect": true,
       "override": {
         "virtualbox-iso": {
           "scripts": [
@@ -117,7 +121,8 @@
     
     {
     "type": "shell",
-    "inline": [ "sleep 1" ]
+    "inline": [ "sleep 1" ],
+    "expect_disconnect": true
     }
   ],
   
@@ -126,10 +131,10 @@
     "cm_version": "",
     "headless": "",
     "install_vagrant_key": "true",
-    "iso_checksum": "7c1e34e95c991175290d704dbdcc6531774cbecb",
-    "iso_name": "CentOS-7-x86_64-Minimal-1503-01.iso",
+    "iso_checksum": "783eef50e1fb91c78901d0421d8114a29b998478",
+    "iso_name": "CentOS-7-x86_64-Minimal-1511.iso",
     "iso_path": "iso",
-    "iso_url": "http://www.fedora.is/CentOS/7/isos/x86_64/CentOS-7-x86_64-Minimal-1503-01.iso",
+    "iso_url": "http://www.fedora.is/CentOS/7/isos/x86_64/CentOS-7-x86_64-Minimal-1511.iso",
     "ssh_password": "vagrant",
     "ssh_username": "vagrant",
     "update": "true"

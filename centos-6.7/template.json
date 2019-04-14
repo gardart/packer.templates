@@ -55,6 +55,7 @@
       "remote_datastore": "{{user `esxi_datastore`}}",
       "remote_username": "{{user `esxi_username`}}",
       "remote_password": "{{user `esxi_password`}}",
+      "keep_registered": true,
       "shutdown_command": "echo '/sbin/halt -h -p' > /tmp/shutdown.sh; echo 'vagrant'|sudo -S sh '/tmp/shutdown.sh'",
       "tools_upload_flavor": "linux",
       "vm_name": "{{user `hostname`}}",
