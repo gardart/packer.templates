@@ -59,10 +59,11 @@
       "vnc_disable_password": true,
       "skip_export": true,
       "shutdown_command": "echo '/sbin/halt -h -p' > /tmp/shutdown.sh; echo 'vagrant'|sudo -S sh '/tmp/shutdown.sh'",
-      "tools_upload_flavor": "linux",
+      "tools_upload_flavor": "",
       "vm_name": "{{user `hostname`}}",
       "vmdk_name": "{{user `hostname`}}",
       "output_directory": "{{user `hostname`}}",
+      "vnc_disable_password": true,
       "vmx_data": {
         "memsize": "1024",
         "numvcpus": "1",
@@ -75,6 +76,7 @@
   "provisioners": [
     {
       "type": "shell",
+      "expect_disconnect": true,
       "environment_vars": [
         "CM={{user `cm`}}",
         "CM_VERSION={{user `cm_version`}}",
