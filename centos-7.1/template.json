@@ -33,9 +33,9 @@
         "<tab>",
         " text ks=http://{{ .HTTPIP }}:{{ .HTTPPort }}/ks.cfg ",
         "HOSTNAME={{user `hostname`}} ",
-        "<enter><wait><wait><esc>"
+        "<enter><wait><wait><wait><esc>"
       ],
-      "boot_wait": "10s",
+      "boot_wait": "15s",
       "disk_size": 10240,
       "disk_type_id": "thin",
       "guest_os_type": "centos-64",
