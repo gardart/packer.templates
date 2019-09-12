@@ -1,0 +1,15 @@
+{
+  "esxi_type": "esx5",
+  "esxi_host": "192.168.5.13",
+  "esxi_username": "root",
+  "esxi_password": ".prikiD.",
+  "esxi_datastore": "SATA",
+  "esxi_datastore_sas": "SAS",
+  "hostname": "lab.h4.local",
+  "ip_cidr": "192.168.5.151/24",
+  "iface": "ens33",
+  "gateway": "192.168.5.254",
+  "nameservers": "192.168.5.25,1.1.1.1",
+  "domain": "h4.lab",
+  "update": "true"
+}
