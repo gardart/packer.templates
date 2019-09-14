@@ -2,6 +2,7 @@ packer_cache
 *.box
 output-*
 config.json
+config.*
 custom.sh
 iso
 .DS_Store
